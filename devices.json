@@ -878,5 +878,19 @@
             "xda_thread": "https://forum.xda-developers.com/g5-plus/development/rom-evolution-x-2-2-t3976463"
          }
       ]
+   },
+   {
+      "name": "Nexus 6P",
+      "brand": "Huawei",
+      "codename": "angler",
+      "supported_versions": [
+         {
+            "version_code": "ten",
+            "version_name": "Ten",
+            "maintainer_name": "voidz",
+            "maintainer_url": "",
+            "xda_thread": ""
+         },
+      ]
    }
 ]
