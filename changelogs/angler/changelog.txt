@@ -1,0 +1,323 @@
+=======================
+     05-30-2020
+=======================
+
+
+   * frameworks/base/
+848d1c7 Automatic translation import
+abd7ce7 Check user unlocked before write to /data/system_ce/0/snapshots
+4e188bc AlarmManagerService.setKernelTime: fix incorrect limit.
+0ef62fe core: Move custom system animations strings to proper file
+
+   * packages/apps/Settings/
+8a60bd1 Automatic translation import
+3e5d96b Fix NPE if default supervisor is not defined
+
+=======================
+     05-29-2020
+=======================
+
+
+   * frameworks/base/
+f82d41f SystemUI: Make the arrow in expanded volume panel match accent color
+8fff833 VolumeDialog: Show the notification stream when unlinked
+6bbc2b4 base: Redo expanded volume panel for 10.x
+
+   * packages/apps/Evolver/
+c64ee23 Automatic translation import
+
+=======================
+     05-28-2020
+=======================
+
+
+   * frameworks/base/
+1220cef fixup! SystemUI: allow devices override audio panel location
+8023dad SystemUI: Allow for notch view to be ignored
+9efafe2 SystemUI: Make max system status bar icons configurable
+e3f13ea SystemUI: Do not convert application name to ISO-8859-15
+cd5173d EvolutionUtils: Add a config to check for notch
+45fe3d2 fwb: Add hide notch support [1/3]
+004906d [SQUASH] Revert several commits
+
+   * packages/apps/Settings/
+fe22e9d Enable and set the default account provider
+e10dffd Settings: Define notch category and hide it on non-notch devices
+0203a5a Settings: Add hide notch support [3/3]
+8b725e4 [SQUASH] Revert several commits
+
+=======================
+     05-27-2020
+=======================
+
+
+   * frameworks/base/
+c2c6933 Package installer: show current and new version on apk installation
+f334669 base: Toggle statusbar privacy indicators [1/2]
+
+   * manifest/
+aef4aac manifest: Track our own PackageInstaller
+5c7997d Fetch our fork of build-tools
+ae759ae manifest: Use our forks of e/{cldr,icu} and s/timezone
+b6fd45a manifest: Track AOSP related repos from our org
+
+   * packages/apps/Evolver/
+1e27f65 Evolver: toggle statusbar privacy indicators [2/2]
+
+   * packages/apps/PermissionController/
+d816dde Utils: add FAKE_PACKAGE_SIGNATURE to platform permissions
+017879b PermissionController: Enable permission hub by default
+3a34d61 Revert "Remove Permissions Hub."
+
+   * vendor/aosp/
+d2fcc18 vendor: Enable qti-telephony-common aosp_usr_pref_sel
+5cd2ab1 extract-utils: Fix usage for ETC files which need sub_dir
+358eafa extract_utils: Fix vendor Android.bp creation with subdirectory
+
+=======================
+     05-26-2020
+=======================
+
+
+   * frameworks/base/
+eb276a0 Add rounded hexagon icon overlay
+38b9f46 Add hexagon icon shape overlay
+0926c64 Start process of next activity with top priority in advance
+a2473e7 Revert "cgroup follow for procs in the same cgroup.procs"
+47fe38b Don't send interaction hint for unnecessary events
+d2d0b59 translate="false" -> translatable="false"
+9440ded Add Light/Dark theme for bugreport warning dialog
+8991277 Fix bugreport warning dialog
+
+   * packages/apps/Bluetooth/
+b3fac20 Bluetooth string: removed id="sender" in bt_sm_2_1_
+fdfd866 translate="false" -> translatable="false"
+
+   * packages/apps/Settings/
+4897426 Fixes ApnEditor not restoring previous UI
+b98e8e5 translate="false" -> translatable="false"
+
+   * system/core/
+f474706 Allow to drop existing fd cache of cgroup path
+
+=======================
+     05-25-2020
+=======================
+
+
+   * frameworks/base/
+8841554 RebootTile: Make default state inactive
+f856517 SystemUI: Extend reboot tile to add power off
+769bc3f RecordingService: Catch IllegalStateException
+44a427e Catch the SQLiteFullException in NotificationUsageStats
+4f429ab base: notch-city: Don't work if the device doesn't have a cutout
+0d43e54 Fix other lights when backlight uses SurfaceController API
+f904849 SystemUI: Use AOSP bluetooth icon when showing battery level
+fb49235 SystemUI: Make sure notification icons are sticked to the left
+
+   * packages/apps/Settings/
+f876e96 hardwareinfo: Hide hardware revision if empty
+6b02644 Preserve icon for "manage space"
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc/
+a1d7de5 Fix style name DialogAlertDayNight
+f48a631 Add dark mode support for AlertDialog
+63a7284 Migrated Nfc to androidx
+
+=======================
+     05-24-2020
+=======================
+
+
+   * frameworks/base/
+7b87177 SystemUI: Prevent loop with display timeout
+
+   * packages/apps/Settings/
+e985b2e Settings: force enable ime space for 2/3 button navbar
+b884291 Settings: Improve gesture navigation handle length [2/2]
+3412e2b Settings: notch-city: Add 3 mode display cutout handler [3/3]
+
+   * packages/resources/devicesettings/
+fe24103 Automatic translation import
+
+=======================
+     05-23-2020
+=======================
+
+
+   * frameworks/base/
+00bdd63 base: Add support to disable h265 on screenrecorder
+7ee39b8 Improve gesture navigation handle length [1/2]
+cc1f587 fixup! fixup! lockscreen: Add support for showing unlock screen directly
+
+   * packages/apps/Settings/
+d0255be Settings: Make IME button space optional [2/2]
+
+=======================
+     05-22-2020
+=======================
+
+
+   * frameworks/base/
+61f32f0 base: notch-city: Add 3 mode display cutout handler [1/3]
+4ae310e SystemUI: allow setting custom cutout shapes
+594eb04 base: Make IME button space optional [1/2]
+178d547 Gesture nav toggle: show IME when needed and improve code
+34b76fa Allow to hide navigation bar gesture completely [1/2]
+1a6eea5 fixup - telephony: Conditionally ignore RSSNR signal level
+65d0a5f [SQUASH] Revert several commits
+
+   * frameworks/opt/telephony/
+63969b5 telephony: Revert caf's APN changes
+ceb488e Fetching IMSI from RUIM properly
+a7884be Fix wrong APN list issue for multimode SIM cards.
+
+   * packages/apps/Evolver/
+582f5ba Evolver: Add a simple About page
+
+   * packages/apps/Settings/
+6b7187e Settings: Simplify gesture navbar toggle
+73437c2 Settings: Allow to hide navigation bar gesture completely [2/2]
+e93af08 Settings: External Navigation fragment launch
+bc1fb36 Settings: Disable dashboards conditions (2/3)
+7e2ba0f Settings: External Smart Pixels fragment launch
+c197967 Developer options toast insulter
+808e7ab [SQUASH] Revert several commits
+
+   * vendor/aosp/
+0a3923d ColorBucket: Add Choco X & Baked Green
+e5a91b0 ColorBucket: Add Material Ocean
+19c84f3 config: Cleanup permissions
+30973fe BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
+
+=======================
+     05-21-2020
+=======================
+
+
+   * device/qcom/sepolicy-legacy-um/
+50d2d6d sepolicy: Unlabel aux camera whitelist prop
+
+   * frameworks/base/
+971bec9 SystemUI: NavBarTile: Change external fragment launch path
+56f3acb core: Disable dashboards conditions (1/3)
+
+   * frameworks/native/
+b268b90 SF: Report active config to java framework
+
+   * packages/apps/Evolver/
+700952d Evolver: Disable dashboards conditions (3/3)
+048a6c8 Evolver: Add Smart Pixels warning
+63b6070 Evolver: Smart Pixels [2/2]
+
+=======================
+     05-20-2020
+=======================
+
+
+   * device/custom/sepolicy/
+961c53c common: Expose aux camera {black,white}list props
+
+   * device/qcom/sepolicy/
+2509b45 sepolicy: Unlabel aux camera whitelist prop
+
+   * external/cldr/
+56c389b CLDR-13739 tzdata2020a updates (#440) [Q]
+160c8c3 CLDR-13029 Update windowsZones.xml to 2019b level (#139)
+
+   * external/icu/
+0bcae65 Update Android to tzdb 2020a [Q branch]
+939d09e Track CLDR-13029 / 2019b changes
+
+   * frameworks/base/
+4ce95bb Smart Pixels: Update default grid pattern
+45288a9 SystemUI: Add Smart Pixels tile
+677ed62 Smart Pixels: Bypass check for obscured window
+a19f25d Smart Pixels: Dynamically register receiver
+21d2a62 Smart Pixels: Switch to registered receiver
+f6de59e Smart Pixels: Move out of SystemUI
+0818659 SystemUI: Smart Pixels [1/2]
+fb1ade7 SystemUI: screen-dimmer-pixel-filter
+b3c9843 fixup - Camera: Ignore torch status update for aux or compsite camera
+8efa46c camera: Support exposing aux camera to apps
+3d2207a Camera: [SQUASH] Revert old exposing aux camera to apps code
+3fa0279 Fix NPE when resizing with transferring focus failed
+bbc9aac Fix freeform window moving/resizing doesn't work
+96de778 SystemUI: use path specification for rounded corners
+36d4bdd Make USB-Debugging notification less important
+78c1fce [SQUASH] Revert several commits
+
+   * frameworks/native/
+34d5db0 Revert "Freedom windows: fix drag [2/2]"
+
+   * hardware/qcom-caf/common/
+55f0691 Don't BUILD_WITHOUT_VENDOR
+
+   * packages/apps/Camera2/
+b7a5706 Camera2: Add privapp permissions xml
+
+   * packages/apps/Evolver/
+7bb993d Evolver: Add CustomSettingsPreferenceFragment
+1cc23eb Revert "Evolver: Wired/BT headset: make ringtone audio focus customizable [2/2]"
+
+   * packages/apps/FMRadio/
+2b43bb2 FMRadio: add BOARD_HAVE_SLSI_FM guard
+c7f11f6 FMRadio: Add privapp permissions xml
+
+   * packages/apps/Snap/
+5e30e66 Move Snap and its libs to /product
+e93f4cc Snap: Add privapp permissions xml
+
+   * packages/apps/Updates/
+e81f9a6 Updates: Add privapp permissions xml
+
+   * system/timezone/
+e473b8c Update Android to tzdb 2020a [Q branch]
+92c7462 Track CLDR-13029 / 2019b changes
+
+   * vendor/motorola/
+35a62d8 river: Replace adobe and native qcdm calib data
+197a298 sdm632-common: rollback sdm blobs to lake Q
+
+=======================
+     05-19-2020
+=======================
+
+
+   * frameworks/base/
+8bfe58e base: [SQUASH] Add Battery Bar [1/2]
+a507af9 LockscreenCharging: Show decimal in battery temperature
+1f1c3c5 LockscreenCharging: Fix current formatting on lockscreen for devices that report directly in Ampere
+da05dbd LockscreenCharging: Squashed (1/3)
+510b69c base: Make 'R style' notification headers toggleable [1/2]
+bad37cd Implement R style notification section headers
+43e23e8 core: Add Accelerometer and Linear Acceleration sensors in blocking list
+8f80fd8 SystemUI: QS: Bring back Navigation Bar tile
+bb2bf95 SystemUI: Always notify listeners when switching mobile data in QS
+54db8f4 SystemUI: Initialize proper visibility for notification icons container
+
+   * packages/apps/Evolver/
+e4ab9c5 Evolver: [SQUASH] Add Battery Bar [2/2]
+da7854f Evolver: LockscreenCharging (3/3)
+ecd16c5 Evolver: Make 'R style' notification headers toggleable [2/2]
+
+   * system/core/
+a071990 LockscreenCharging: squashed (2/3)
+
+=======================
+     05-18-2020
+=======================
+
+
+   * frameworks/opt/net/wifi/
+2cc9145 wifi_hal: add slsi wifi hal support
+
+=======================
+     05-17-2020
+=======================
+
+
+   * hardware/qcom-caf/sdm845/display/
+17e459e Revert "sdm: add rotator max line width capability."
+6d5e8fe Merge tag 'LA.UM.8.3.r1-07200-sdm845.0' of https://source.codeaurora.org/quic/la/platform/hardware/qcom/display into ten
+
